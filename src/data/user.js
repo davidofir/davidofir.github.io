@@ -41,18 +41,8 @@ const INFO = {
 				'/SoundBox/SoundBox-Recommendations.png',
 				'/SoundBox/SoundBox-Song.png',
 			],
-			frameworks:"React Native, Node.js, Firebase, Azure, Flask"
-		},
-
-		{
-			title: "Wardroba",
-			description:
-				"Collaborated with 2 other group members to create an application whose goal is to make styling and color matching more accessible using image recognition and color extraction.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/kotlin/kotlin.png",
-			linkText: "View Project",
-			link: "https://github.com/Akochhar29/Wardroba",
-			videoUrl:'https://www.youtube.com/embed/5y6Tcgi-cMo',
-			frameworks:"Android, Firebase"
+			frameworks:"React Native, Node.js, Firebase, Azure, Flask",
+			languages:"JavaScript, Python"
 		},
 
 		{
@@ -70,7 +60,20 @@ const INFO = {
 				'/FarmMart/FarmMart-Inbox.png',
 				'/FarmMart/FarmMart-SendMessage.png',
 			],
-			frameworks:"React Native, Firebase"
+			frameworks:"React Native, Firebase",
+			languages:"JavaScript"
+		},
+
+		{
+			title: "Wardroba",
+			description:
+				"Collaborated with 2 other group members to create an application whose goal is to make styling and color matching more accessible using image recognition and color extraction.",
+			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/kotlin/kotlin.png",
+			linkText: "View Project",
+			link: "https://github.com/Akochhar29/Wardroba",
+			videoUrl:'https://www.youtube.com/embed/5y6Tcgi-cMo',
+			frameworks:"Android, Firebase",
+			languages:"Kotlin"
 		},
 
 		// {
