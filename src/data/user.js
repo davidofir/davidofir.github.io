@@ -51,7 +51,8 @@ const INFO = {
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/kotlin/kotlin.png",
 			linkText: "View Project",
 			link: "https://github.com/Akochhar29/Wardroba",
-			videoUrl:'https://www.youtube.com/embed/5y6Tcgi-cMo'
+			videoUrl:'https://www.youtube.com/embed/5y6Tcgi-cMo',
+			frameworks:"Android, Firebase"
 		},
 
 		{
@@ -68,7 +69,8 @@ const INFO = {
 				'/FarmMart/FarmMart-ContactSeller.jpg',
 				'/FarmMart/FarmMart-Inbox.png',
 				'/FarmMart/FarmMart-SendMessage.png',
-			]
+			],
+			frameworks:"React Native, Firebase"
 		},
 
 		// {

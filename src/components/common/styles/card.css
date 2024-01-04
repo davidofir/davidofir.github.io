@@ -1,21 +1,23 @@
 @import "../../../data/styles.css";
-
 .card {
 	mix-blend-mode: normal;
 	border-radius: 20px;
-	outline: 2px solid #f4f4f5;
+	outline: none;
+	border: none !important;
+
+
 }
 
 .card-container {
 	padding: 30px;
 	padding-bottom: 5px;
+	border: none;
+	
 }
-
 .card-header {
 	display: flex;
 	align-items: center;
 }
-
 .card-icon {
 	font-size: 15px;
 	color: var(--tertiary-color);
@@ -29,6 +31,7 @@
 }
 
 .card-body {
+	border:none;
 	padding-top: 40px;
 	font-size: 15px;
 }
