@@ -4,10 +4,7 @@ import { Helmet } from "react-helmet";
 import { faMailBulk } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-	faTwitter,
 	faGithub,
-	faStackOverflow,
-	faInstagram,
 	faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
 
@@ -105,7 +102,7 @@ const Homepage = () => {
 								<div className="homepage-image-container">
 									<div className="homepage-image-wrapper">
 										<img
-											src="homepage.jpg"
+											src="programming.png"
 											className="homepage-image"
 										/>
 									</div>
@@ -145,7 +142,9 @@ const Homepage = () => {
 								/>
 							</a>
 						</div>
-
+						<div className="homepage-works">
+								<Works />
+							</div>
 						<div className="homepage-projects">
 							<AllProjects />
 						</div>
@@ -168,9 +167,6 @@ const Homepage = () => {
 								))}
 							</div>
 
-							<div className="homepage-works">
-								<Works />
-							</div>
 						</div>
 
 						<div className="page-footer">
