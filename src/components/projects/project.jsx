@@ -6,31 +6,27 @@ import MediaDisplay from './MediaDisplay';
 import "./styles/project.css";
 
 const Project = (props) => {
-    const { logo, title, description, linkText, link, videoUrl, imageUrls } = props;
+    const { logo, title, description, linkText, link, videoUrl, imageUrls, frameworks } = props;
     return (
         <React.Fragment>
-            <div className="project">
-                <div className="project-container">
-                    <div className="project-logo">
-                        <img src={logo} alt="logo" />
-                    </div>
-                    
-                    <div className="project-title">{title}</div>
-					<div className="project-description">tools/frameworks:</div>
-					<MediaDisplay videoUrl={videoUrl} imageUrls={imageUrls} />
-                    
-                    <div className="project-description">{description}</div>
-                    
-                    
-
-                    <Link to={link}>
-                        <div className="project-link">
-                            <div className="project-link-icon">
-                                <FontAwesomeIcon icon={faLink} />
-                            </div>
-                            <div className="project-link-text">{linkText}</div>
+            <div className="col-md-6 col-lg-4 mb-4">
+                <div className="card">
+                    <div className="card-body">
+                        <div className="project-logo">
+                            <img src={logo} alt="logo" className="img-fluid" />
                         </div>
-                    </Link>
+                        
+                        <h5 className="card-title">{title}</h5>
+                        <p className="card-text">Frameworks: {frameworks}</p>
+                        <MediaDisplay videoUrl={videoUrl} imageUrls={imageUrls} />
+                        
+                        <p className="card-text">{description}</p>
+                        
+                        <Link to={link} className="card-link">
+                            <FontAwesomeIcon icon={faLink} className="mr-2" />
+                            {linkText}
+                        </Link>
+                    </div>
                 </div>
             </div>
         </React.Fragment>

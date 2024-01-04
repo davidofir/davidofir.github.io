@@ -25,7 +25,7 @@ const INFO = {
 
 	projects: [
 		{
-			title: "SoundBox",
+			title: "SoundBox (Capstone Project)",
 			description:
 				"Collaborated with 2 other team members, the project tries to solve a common issue that many music fans face, how to browse reviews from their favorite artists while also connecting with other like-minded fans.",
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
@@ -40,7 +40,8 @@ const INFO = {
 				'/SoundBox/SoundBox-Merch.png',
 				'/SoundBox/SoundBox-Recommendations.png',
 				'/SoundBox/SoundBox-Song.png',
-			]
+			],
+			frameworks:"React Native, Node.js, Firebase, Azure, Flask"
 		},
 
 		{
