@@ -16,10 +16,12 @@ const Project = (props) => {
                     </div>
                     
                     <div className="project-title">{title}</div>
-                    <div className="project-description">skills:</div>
+					<div className="project-description">tools/frameworks:</div>
+					<MediaDisplay videoUrl={videoUrl} imageUrls={imageUrls} />
+                    
                     <div className="project-description">{description}</div>
                     
-                    <MediaDisplay videoUrl={videoUrl} imageUrls={imageUrls} />
+                    
 
                     <Link to={link}>
                         <div className="project-link">

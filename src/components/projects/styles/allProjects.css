@@ -1,22 +1,30 @@
 .all-projects-container {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: stretch;
-	padding-top: 30px;
-	padding-bottom: 30px;
-	margin-left: -35px;
-	margin-right: -35px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    gap: 20px; /* Provides space between cards */
 }
 
 .all-projects-project {
-	width: calc(100% / 3);
-	box-sizing: border-box;
-	padding: 10px;
-	overflow: hidden;
+    box-sizing: border-box;
+    padding: 10px; /* Internal space within each card */
+    margin-bottom: 20px; /* Space below each card */
+    flex-basis: calc(50% - 20px); /* Two cards per row by default */
+    max-width: calc(50% - 20px); /* Two cards per row by default */
+}
+
+@media (max-width: 900px) {
+    .all-projects-project {
+        flex-basis: calc(100% - 20px); /* Full width for smaller screens */
+        max-width: calc(100% - 20px); /* Full width for smaller screens */
+    }
 }
 
 @media (max-width: 600px) {
-	.all-projects-project {
-		width: calc(100% / 2);
-	}
+    .all-projects-project {
+        flex-basis: calc(100% - 20px); /* Full width minus the gap for smaller screens */
+        max-width: calc(100% - 20px); /* Full width minus the gap for smaller screens */
+    }
 }

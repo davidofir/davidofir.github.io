@@ -1,0 +1,10 @@
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%); /* This will change white arrows to black */
+}
+
+/* Optional: Add a background to the arrows for better visibility */
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: rgba(0, 0, 0, 0.05); /* Semi-transparent black background */
+}
