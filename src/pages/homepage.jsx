@@ -102,7 +102,7 @@ const Homepage = () => {
 								<div className="homepage-image-container">
 									<div className="homepage-image-wrapper">
 										<img
-											src="Programming.png"
+											src={process.env.PUBLIC_URL + '/Programming.png'}
 											className="homepage-image"
 										/>
 									</div>

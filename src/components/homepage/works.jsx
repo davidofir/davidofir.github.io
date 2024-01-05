@@ -16,7 +16,7 @@ const Works = () => {
 						<div className="top-work">
 							<div className="work">
 								<img
-									src="./naryant_logo.jpeg"
+									src={process.env.PUBLIC_URL + '/naryant_logo.jpeg'}
 									alt="naryant"
 									className="work-image"
 								/>
@@ -37,7 +37,7 @@ analytical skills and the ability to communicate complex findings effectively.</
 						<div className="top-work">
 							<div className="work">
 								<img
-									src="./cloud_dx_logo.jpeg"
+									src={process.env.PUBLIC_URL + '/cloud_dx_logo.jpeg'}
 									alt="cloud_dx"
 									className="work-image"
 								/>

@@ -14,7 +14,7 @@ const Certification = (props) => {
 				</div>
 				<div className="certification-right-side">
 						<div className="certification-title">{title}</div>
-						<img className="certification-image" src={img_source}/>
+						<img className="certification-image" src={ img_source}/>
 						<div className="certification-date">{date}</div>
 					</div>
 			</div>

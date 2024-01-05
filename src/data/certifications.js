@@ -3,7 +3,7 @@ function hadoop_certificate() {
 	return {
 		date: "Awarded: December 2, 2023",
 		title: "Big Data Analytics with Hadoop and Apache Spark",
-		img_source:"/Hadoop_Certificate.jpeg",
+		img_source:process.env.PUBLIC_URL + '/Hadoop_Certificate.jpeg',
 		style: ``,
 		keywords: [
 			"Big Data Analytics with Hadoop and Apache Spark",
@@ -17,7 +17,7 @@ function react_certificate() {
 	return {
 		date: "Awarded: March 16, 2022",
 		title: "Learning React.js by Eve Porcello",
-		img_source:"/React_Certificate.png",
+		img_source:process.env.PUBLIC_URL + '/React_Certificate.png',
 		keywords: [
 			"Learning React.js by Eve Porcello",
 			"Eve",
