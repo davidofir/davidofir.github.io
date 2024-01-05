@@ -11,13 +11,13 @@ import {
 import Logo from "../components/common/logo";
 import Footer from "../components/common/footer";
 import NavBar from "../components/common/navBar";
-import Article from "../components/homepage/article";
+import Certification from "../components/homepage/certification";
 import Works from "../components/homepage/works";
 import AllProjects from "../components/projects/allProjects";
 
 import INFO from "../data/user";
 import SEO from "../data/seo";
-import myArticles from "../data/articles";
+import myCertifications from "../data/certifications";
 
 import "./styles/homepage.css";
 
@@ -150,18 +150,18 @@ const Homepage = () => {
 						</div>
 
 						<div className="homepage-after-title">
-							<div className="homepage-articles">
-								{myArticles.map((article, index) => (
+							<div className="homepage-certifications">
+								{myCertifications.map((certification, index) => (
 									<div
-										className="homepage-article"
+										className="homepage-certification"
 										key={(index + 1).toString()}
 									>
-										<Article
+										<Certification
 											key={(index + 1).toString()}
-											date={article().date}
-											title={article().title}
-											description={article().description}
-											link={"/article/" + (index + 1)}
+											date={certification().date}
+											title={certification().title}
+											description={certification().description}
+											link={"/certification/" + (index + 1)}
 										/>
 									</div>
 								))}

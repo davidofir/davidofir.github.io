@@ -17,12 +17,6 @@ const INFO = {
 			"A software developer with a passion for crafting robust and scalable solutions across mobile, backend, and front-end web applications. My approach blends innovative thinking with a strong commitment to problem-solving, driven by continuous learning and a talent for translating complex requirements into user-centric software to deliver impactful results.",
 	},
 
-	articles: {
-		title: "I'm passionate about pushing the boundaries of what's possible and inspiring the next generation of innovators.",
-		description:
-			"Chronological collection of my long-form thoughts on programming, leadership, product design, and more.",
-	},
-
 	projects: [
 		{
 			title: "SoundBox (Capstone Project)",
