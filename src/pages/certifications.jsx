@@ -52,8 +52,7 @@ const Certifications = () => {
 											key={(index + 1).toString()}
 											date={certification().date}
 											title={certification().title}
-											description={certification().description}
-											link={"/certification/" + (index + 1)}
+											img_source={certification().img_source}
 										/>
 									</div>
 								))}

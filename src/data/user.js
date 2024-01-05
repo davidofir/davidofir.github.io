@@ -36,7 +36,8 @@ const INFO = {
 				'/SoundBox/SoundBox-Song.png',
 			],
 			frameworks:"React Native, Node.js, Firebase, Azure, Flask",
-			languages:"JavaScript, Python"
+			languages:"JavaScript, Python",
+			features:['Secure login and signup','Chatting with other users including real-time delivery of notifications to the relevant recepients, using a cross-platform notification manager and websockets for real-time transimission of messages',"Recommendations for artists based on the user's activity","Reviewing and rating artists, albums and songs, in addition to reading other users' reviews","Viewing specific artists' upcoming events using an events API","Displaying and routing the user to buy artist merchandise by scraping the merchandise information"]
 		},
 
 		{
@@ -55,7 +56,8 @@ const INFO = {
 				'/FarmMart/FarmMart-SendMessage.png',
 			],
 			frameworks:"React Native, Firebase",
-			languages:"JavaScript"
+			languages:"JavaScript",
+			features:['Secure login and signup','Browsing nearby stores on a map centered around your location','Messaging farmers','Read incoming messages']
 		},
 
 		{
@@ -67,7 +69,8 @@ const INFO = {
 			link: "https://github.com/Akochhar29/Wardroba",
 			videoUrl:'https://www.youtube.com/embed/5y6Tcgi-cMo',
 			frameworks:"Android, Firebase",
-			languages:"Kotlin"
+			languages:"Kotlin",
+			features:['Secure login and signup','Scan an item of clothing',"Extract the image's dominant color color",'receive color matching recommendations','Persist the item color and type for future use using Firebase']
 		},
 
 		// {

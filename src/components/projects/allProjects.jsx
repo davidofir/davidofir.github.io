@@ -17,6 +17,7 @@ const AllProjects = () => {
           imageUrls={project.imageUrls} 
           videoUrl={project.videoUrl}
           frameworks={project.frameworks}
+          features={project.features}
 		  languages={project.languages}
 		  platforms={project.platforms}
         />

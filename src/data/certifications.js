@@ -1,9 +1,9 @@
 import React from "react";
 function hadoop_certificate() {
 	return {
-		date: "December 2, 2023",
+		date: "Awarded: December 2, 2023",
 		title: "Big Data Analytics with Hadoop and Apache Spark",
-		img:"/Hadoop_Certificate.jpeg",
+		img_source:"/Hadoop_Certificate.jpeg",
 		style: ``,
 		keywords: [
 			"Big Data Analytics with Hadoop and Apache Spark",
@@ -15,9 +15,9 @@ function hadoop_certificate() {
 }
 function react_certificate() {
 	return {
-		date: "March 16, 2022",
+		date: "Awarded: March 16, 2022",
 		title: "Learning React.js by Eve Porcello",
-		img:"/React_Certificate.png",
+		img_source:"/React_Certificate.png",
 		keywords: [
 			"Learning React.js by Eve Porcello",
 			"Eve",
