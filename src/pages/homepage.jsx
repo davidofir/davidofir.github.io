@@ -58,7 +58,7 @@ const Homepage = () => {
 
 	const logoStyle = {
 		display: "flex",
-		position: stayLogo ? "fixed" : "relative",
+		position:  "relative",
 		top: stayLogo ? "3vh" : "auto",
 		zIndex: 999,
 		border: stayLogo ? "1px solid white" : "none",
