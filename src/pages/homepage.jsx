@@ -102,7 +102,7 @@ const Homepage = () => {
 								<div className="homepage-image-container">
 									<div className="homepage-image-wrapper">
 										<img
-											src="programming.png"
+											src="Programming.png"
 											className="homepage-image"
 										/>
 									</div>
