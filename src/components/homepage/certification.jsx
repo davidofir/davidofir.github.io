@@ -9,9 +9,6 @@ const Certification = (props) => {
 		<React.Fragment>
 			<div className="certification">
 
-					<div className="certification-left-side">
-
-				</div>
 				<div className="certification-right-side">
 						<div className="certification-title">{title}</div>
 						<img className="certification-image" src={img_source}/>
