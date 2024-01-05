@@ -10,20 +10,20 @@
 
 .navbar {
     display: flex;
-    justify-content: space-between; /* Align the logo and the hamburger menu */
+    justify-content: space-between;
     align-items: center;
     position: fixed;
     top: 3vh;
     left: 0;
     right: 0;
     z-index: 999;
-    padding: 0 1rem; /* Add padding on the sides */
+    padding: 0 1rem;
 }
 
 .menu-icon {
-    display: none; /* Initially hidden */
+    display: none;
     cursor: pointer;
-    font-size: 24px; /* Adjust the size of the menu icon as needed */
+    font-size: 24px;
 }
 
 .nav-background {
@@ -36,24 +36,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: height 0.3s ease; /* Smooth transition for expanding/collapsing */
+    transition: height 0.3s ease;
 }
 
 .nav-list {
     display: flex;
-    justify-content: space-between; /* Space items evenly */
+    justify-content: space-between;
     list-style: none;
     align-items: center;
     width: 100%;
     padding: 0;
     margin: 0;
-    transition: transform 0.3s ease; /* Smooth transition for expanding/collapsing */
+    transition: transform 0.3s ease;
 }
 
 .nav-item {
     font-weight: bold;
     font-size: 0.8em;
-    padding: 10px; /* Add padding to create space around text */
+    padding: 10px;
 }
 
 .nav-item.active a {
@@ -73,27 +73,27 @@
 @media (max-width: 768px) {
     .menu-icon {
         display: block;
-        position: absolute; /* Positioned absolutely to place it correctly */
-        top: 10px; /* Align vertically */
-        right: 10px; /* Align horizontally */
-        z-index: 1000; /* Ensure it's above other items */
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 1000;
     }
 
     .navbar {
-        justify-content: flex-start; /* Align items to the start */
+        justify-content: flex-start;
     }
 
     .nav-background {
-        height: auto; /* Height adjusts to content */
+        height: auto;
         padding: 0;
-        border-radius: 0; /* Remove border-radius */
+        border-radius: 0;
     }
 
     .nav-list {
         display: none;
-        flex-direction: column; /* Stack items vertically */
+        flex-direction: column;
         width: 100%;
-        transform: translateY(-10px); /* Slight adjustment when expanded */
+        transform: translateY(-10px);
     }
 
     .nav-background.expanded .nav-list {
@@ -101,9 +101,9 @@
     }
 
     .nav-item {
-        width: 100%; /* Full width for each nav item */
-        padding: 10px 20px; /* Add more padding for touch targets */
-        border-bottom: 1px solid #ddd; /* Optional border for each item */
-        text-align: center; /* Center text */
+        width: 100%;
+        padding: 10px 20px;
+        border-bottom: 1px solid #ddd;
+        text-align: center;
     }
 }
