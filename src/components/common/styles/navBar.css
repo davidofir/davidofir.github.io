@@ -1,74 +1,109 @@
 @import "../../../data/styles.css";
 
 .nav-container {
-	margin: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .navbar {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: fixed;
-	top: 3vh;
-	z-index: 999;
+    display: flex;
+    justify-content: space-between; /* Align the logo and the hamburger menu */
+    align-items: center;
+    position: fixed;
+    top: 3vh;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    padding: 0 1rem; /* Add padding on the sides */
+}
+
+.menu-icon {
+    display: none; /* Initially hidden */
+    cursor: pointer;
+    font-size: 24px; /* Adjust the size of the menu icon as needed */
 }
 
 .nav-background {
-	width: 380px;
-	height: 40px;
-	padding-left: 0%;
-	padding-right: 0%;
-	background: #fff;
-	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-	border-radius: 40px;
+    max-width: 380px;
+    width: 100%;
+    height: 40px;
+    background: #fff;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: height 0.3s ease; /* Smooth transition for expanding/collapsing */
 }
 
 .nav-list {
-	display: flex;
-	justify-content: space-between;
-	list-style: none;
-	align-items: center;
-	margin-left: -16px;
-	margin-right: 20px;
-	margin-top: 11px;
+    display: flex;
+    justify-content: space-between; /* Space items evenly */
+    list-style: none;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    transition: transform 0.3s ease; /* Smooth transition for expanding/collapsing */
 }
 
 .nav-item {
-	font-weight: bold;
-	font-size: 80%;
+    font-weight: bold;
+    font-size: 0.8em;
+    padding: 10px; /* Add padding to create space around text */
 }
 
 .nav-item.active a {
-	color: var(--link-color) !important;
+    color: var(--link-color) !important;
 }
 
 .nav-item a {
-	text-decoration: none;
-	color: var(--primary-color);
+    text-decoration: none;
+    color: var(--primary-color);
 }
 
 .nav-item a:hover {
-	color: var(--link-color);
-	transition: color 0.3s ease-in-out;
+    color: var(--link-color);
+    transition: color 0.3s ease-in-out;
 }
 
-@media (max-width: 600px) {
-	.navbar {
-		margin-left: 25%;
-		margin-right: 25%;
-		width: 80%;
-		font-size: 80%;
-	}
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+        position: absolute; /* Positioned absolutely to place it correctly */
+        top: 10px; /* Align vertically */
+        right: 10px; /* Align horizontally */
+        z-index: 1000; /* Ensure it's above other items */
+    }
 
-	.nav-background {
-		width: 80%;
-		height: 40px;
-	}
+    .navbar {
+        justify-content: flex-start; /* Align items to the start */
+    }
 
-	.nav-item {
-		font-weight: bold;
-	}
+    .nav-background {
+        height: auto; /* Height adjusts to content */
+        padding: 0;
+        border-radius: 0; /* Remove border-radius */
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column; /* Stack items vertically */
+        width: 100%;
+        transform: translateY(-10px); /* Slight adjustment when expanded */
+    }
+
+    .nav-background.expanded .nav-list {
+        display: flex;
+    }
+
+    .nav-item {
+        width: 100%; /* Full width for each nav item */
+        padding: 10px 20px; /* Add more padding for touch targets */
+        border-bottom: 1px solid #ddd; /* Optional border for each item */
+        text-align: center; /* Center text */
+    }
 }
