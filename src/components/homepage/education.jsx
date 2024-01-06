@@ -24,6 +24,7 @@ const Education = () => {
                             </div>
 							<div className="education-responsibilities">
 								<ul>
+                                <li>Graduated with Academic Honours award</li>
 								<li>Courses: Software Engineering, Enterprise Software Development, Data Structures & Algorithms</li>
 								</ul>
 								</div>
