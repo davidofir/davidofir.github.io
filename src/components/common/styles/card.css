@@ -24,6 +24,7 @@
 
 .card-title {
 	color: var(--secondary-color);
+	margin-top: 7px;
 	font-size: 14px;
 	padding-left: 20px;
 	font-weight: 650;
