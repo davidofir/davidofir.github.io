@@ -2,7 +2,7 @@ import React from "react";
 function hadoop_certificate() {
 	return {
 		date: "Awarded: December 2, 2023",
-		title: "Big Data Analytics with Hadoop and Apache Spark",
+		title: "Big Data Analytics with Hadoop and Apache Spark by Kumaran Ponnambalam",
 		img_source:process.env.PUBLIC_URL + '/Hadoop_Certificate.jpeg',
 		style: ``,
 		keywords: [

@@ -20,6 +20,7 @@ import SEO from "../data/seo";
 import myCertifications from "../data/certifications";
 
 import "./styles/homepage.css";
+import Education from "../components/homepage/education";
 
 const Homepage = () => {
 	const [stayLogo, setStayLogo] = useState(false);
@@ -142,9 +143,13 @@ const Homepage = () => {
 								/>
 							</a>
 						</div>
+						<div className="homepage-education">
+							<Education/>
+						</div>
 						<div className="homepage-works">
 								<Works />
 							</div>
+
 						<div className="homepage-projects">
 							<AllProjects />
 						</div>
