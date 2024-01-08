@@ -9,21 +9,89 @@
   background-color: rgba(0, 0, 0, 0.05);
 }
 
-.video-container {
-  position: relative;
-  width: 100%;
-  padding-top: 56.25%;
-  overflow: hidden;
-}
+
 .carousel-item img {
   max-height: 100%;
   max-width: 100%;
   object-fit: contain;
 }
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  overflow: hidden;
+}
+@media (max-width: 768px) {
+  .video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: auto; /* Height is auto to maintain aspect ratio */
+    padding-bottom: 56.25%; /* Maintain the aspect ratio */
+    z-index: 1; /* Set z-index to stack below the text content */
+  }
+
+  /* Position the iframe to fill the video container */
+  .responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  
+  .project { 
+    padding-top: 56.25%; 
+  }
+
+ 
+  .text-container {
+    position: relative;
+    z-index: 2; 
+    background: white; 
+    
+  }
+
+  
+  .carousel-item {
+    height: auto; 
+    position: relative; 
+  }
+
+  .responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  
+  .project-content, 
+  .text-container {
+    padding-top: 56.25%;
+  }
+
+  .carousel-item {
+    height: auto;
+    min-height: 400px;
+  }
+
+  .project-description, .project-title, .project-buttons {
+    z-index: 3;
+    position: relative;
+  }
+}
 .responsive-iframe {
   position: absolute;
   top: 0;
   left: 0;
+  bottom: 0;
+  right: 0;
   width: 100%;
   height: 100%;
   border: none;
