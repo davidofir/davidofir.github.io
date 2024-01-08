@@ -55,13 +55,18 @@
     right: 10px; 
 }
 .project-buttons {
-    margin-top: 20px; /* Space from the text above */
-    align-self: flex-start;
+    position: absolute; /* Set the position to absolute */
+    bottom: 10px; /* Position it at the bottom of the project container */
+    width: 100%; /* Stretch across the entire width of the project container */
+    display: flex;
+    justify-content: space-between; /* Space out the buttons */
+    padding: 0 20px; /* Add some padding on the sides */
 }
 @media (max-width: 768px) {
     .project {
         flex-direction: column;
         text-align: center;
+        
     }
 
     .project-content {

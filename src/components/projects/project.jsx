@@ -21,7 +21,9 @@ const Project = (props) => {
                   <p className="project-description">{`Frameworks: ${frameworks}`}</p>
                   <p className="project-description">{`Languages: ${languages}`}</p>
                   <p className="project-description">{description}</p>
-                  <div className="project-buttons">
+
+              </div>
+              <div className="project-buttons">
                     <div>
                       <Button variant="primary" onClick={handleShow}>
                           View Features
@@ -34,7 +36,6 @@ const Project = (props) => {
                       </Link>
                     </div>
                     </div>
-              </div>
           </div>
           <Modal show={showModal} onHide={handleClose} size="md" aria-labelledby="contained-modal-title-vcenter" centered>
               <Modal.Header closeButton>
