@@ -2,6 +2,8 @@
 @import "../../../data/styles.css";
 
 .project {
+    position: relative; /* Establish relative positioning context for children */
+    padding-bottom: 60px; /* Make room for the 'View Project' button */
     display: flex;
     align-items: center;
     width: 100%;
@@ -10,6 +12,7 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
 }
 .project:hover {
     transform: scale(1.03); /* Slightly increase the size of the card */
@@ -41,7 +44,6 @@
     margin-bottom: 10px;
 }
 .project-buttons{
-    
     margin: 20px;
 }
 .project-link {
@@ -50,8 +52,17 @@
     color: var(--primary-color);
     margin-top: 10px;
     text-decoration: none;
+    position: absolute; /* Position the link absolutely within the .project */
+    bottom: 10px; /* Place it 10px from the bottom */
+    right: 10px; /* Place it 10px from the right */
 }
-
+.project-buttons {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center buttons horizontally */
+    justify-content: center; /* Center buttons vertically if there's extra space */
+    margin: 20px 0;
+}
 @media (max-width: 768px) {
     .project {
         flex-direction: column;
