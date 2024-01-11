@@ -2,7 +2,7 @@ const INFO = {
 	main: {
 		title: "Reactfolio by Ofir David",
 		name: "Ofir D.",
-		email: "davidof@sheridancollege.ca",
+		email: "ofir.david30@gmail.com",
 		logo: process.env.PUBLIC_URL + '/logo.png',
 	},
 
