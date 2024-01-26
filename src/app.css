@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 @import "/src/data/styles.css";
 
 ::-webkit-scrollbar {
@@ -18,20 +19,20 @@
 }
 
 .page-content {
-	background-color: white;
+	background-color: #ffffff;
 	position: relative;
-}
-
-.page-content:before,
-.page-content:after {
+	font-family: 'Montserrat', sans-serif; 
+  }
+  .page-content:before,
+  .page-content:after {
 	content: "";
 	position: absolute;
 	top: 0;
 	bottom: 0;
 	width: calc((100% - 1200px) / 2);
 	background-color: #fafafa;
-	border: 1px solid #f4f4f5;
-}
+	border: 1px solid #eaeaea; 
+  }
 
 .page-content:before {
 	left: 0;

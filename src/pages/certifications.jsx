@@ -33,11 +33,6 @@ const Certifications = () => {
 			<div className="page-content">
 				<NavBar active="certifications" />
 				<div className="content-wrapper">
-					<div className="certifications-logo-container">
-						<div className="certifications-logo">
-							<Logo width={46} />
-						</div>
-					</div>
 
 					<div className="certifications-main-container">
 

@@ -81,11 +81,6 @@ const Homepage = () => {
 			<div className="page-content">
 				<NavBar active="home" />
 				<div className="content-wrapper">
-					<div className="homepage-logo-container">
-						<div style={logoStyle}>
-							<Logo width={logoSize} link={false} />
-						</div>
-					</div>
 
 					<div className="homepage-container">
 						<div className="homepage-first-area">
@@ -152,25 +147,6 @@ const Homepage = () => {
 
 						<div className="homepage-projects">
 							<AllProjects />
-						</div>
-
-						<div className="homepage-after-title">
-							<div className="homepage-certifications">
-								{myCertifications.map((certification, index) => (
-									<div
-										className="homepage-certification"
-										key={(index + 1).toString()}
-									>
-										<Certification
-											key={(index + 1).toString()}
-											date={certification().date}
-											title={certification().title}
-											img_source={certification().img_source}
-										/>
-									</div>
-								))}
-							</div>
-
 						</div>
 
 						<div className="page-footer">

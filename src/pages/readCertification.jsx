@@ -40,11 +40,6 @@ const ReadCertification = () => {
 				<NavBar />
 
 				<div className="content-wrapper">
-					<div className="read-certification-logo-container">
-						<div className="read-certification-logo">
-							<Logo width={46} />
-						</div>
-					</div>
 
 					<div className="read-certification-container">
 						<div className="read-certification-back">
