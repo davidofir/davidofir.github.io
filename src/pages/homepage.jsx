@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet";
+import Lottie from "lottie-react";
+import animationData from '../assets/Animation - 1706312347317.json'
 
 import { faMailBulk } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -97,10 +99,7 @@ const Homepage = () => {
 							<div className="homepage-first-area-right-side">
 								<div className="homepage-image-container">
 									<div className="homepage-image-wrapper">
-										<img
-											src={process.env.PUBLIC_URL + '/Programming.png'}
-											className="homepage-image"
-										/>
+										<Lottie animationData={animationData}/>
 									</div>
 								</div>
 							</div>
