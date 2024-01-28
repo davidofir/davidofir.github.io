@@ -137,13 +137,13 @@ const Homepage = () => {
 								/>
 							</a>
 						</div>
-						<div className="homepage-education">
-							<Education/>
-						</div>
+
 						<div className="homepage-works">
 								<Works />
 							</div>
-
+							<div className="homepage-education">
+								<Education/>
+							</div>
 						<div className="homepage-projects">
 							<AllProjects />
 						</div>
