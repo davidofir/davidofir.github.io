@@ -13,9 +13,10 @@
 
 .homepage-first-area {
     display: flex;
-    margin-top: 10%;
     justify-content: space-between;
     align-items: center;
+    margin-top: 5vh;
+    margin-bottom: 20vh;
 }
 
 .homepage-first-area-left-side {
@@ -45,7 +46,6 @@
 .homepage-image-wrapper {
     overflow: hidden;
     border-radius: 10%;
-    transform: rotate(3deg);
 }
 
 .homepage-image-wrapper img {
@@ -98,6 +98,9 @@
 @media (max-width: 1024px) {
     .homepage-first-area {
         flex-direction: column;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        height: 100%;
     }
 
     .homepage-first-area-left-side {
@@ -117,7 +120,7 @@
     .homepage-subtitle {
         width: 100% !important;
         margin-top: 10px;
-        margin-bottom: 20px; /* Added margin-bottom for space */
+        margin-bottom: 20px;
         order: 3;
     }
 
