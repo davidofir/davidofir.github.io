@@ -31,7 +31,8 @@ const Works = () => {
                                 <li>Developed an automatic dependency resolution script for Python, saving weeks in the pipeline’s setup.</li>
                                 <li>Built a tool that compares multiple Survival-Analysis models and returns the best models, enhancing the efficiency and ease of selecting the most suitable model.</li>
 								<li>Applied analytical skills to assess the impact of removing certain features on the accuracy of the model.</li>
-                                </ul>
+                                <li>Reported findings to non-technical domain experts, demonstrating communication skills.</li>
+								</ul>
                                 </div>
 			  
 			  {/* CloudDX + CMI */}
