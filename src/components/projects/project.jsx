@@ -30,10 +30,10 @@ const Project = (props) => {
                       </Button>
                     </div>
                     <div>
-                      <Link to={link} className="project-link">
+                      <a href={link} target="_blank" className="project-link">
                           <FontAwesomeIcon icon={faLink} className="mr-2" />
                           {linkText}
-                      </Link>
+                      </a>
                     </div>
                     </div>
           </div>
