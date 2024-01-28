@@ -28,9 +28,9 @@ const Works = () => {
 			  </div>
 			  <div className="work-responsibilities">
                                 <ul>
-                                <li>Used Python to build a model for elderly population risk assessment, showcasing advanced
-analytical skills and the ability to communicate complex findings effectively.</li>
-                                <li>Communicated intricate findings to domain experts, reflecting strong technical communication abilities.</li>
+                                <li>Developed an automatic dependency resolution script for Python, saving weeks in the pipeline’s setup.</li>
+                                <li>Built a tool that compares multiple Survival-Analysis models and returns the best models, enhancing the efficiency and ease of selecting the most suitable model.</li>
+								<li>Applied analytical skills to assess the impact of removing certain features on the accuracy of the model.</li>
                                 </ul>
                                 </div>
 			  
@@ -49,12 +49,9 @@ analytical skills and the ability to communicate complex findings effectively.</
 			  </div>
 			  <div className="work-responsibilities">
                                 <ul>
-                                    <li>Swiftly resolved a longstanding, complex graphing issue within hours, previously unresolved across
-multiple work terms, involving multi-layer debugging across React Native, Kotlin, and an Arduino.</li>
-                                <li>Improved the API vital transmission response times by approximately 99% by transitioning from REST to
-SignalR</li>
-                                <li>Developed the API and Database using C# and ASP.NET alongside stored procedures in Microsoft SQL
-Server to aggregate and create custom-sized time-series queries.</li>
+                                    <li>Swiftly troubleshooted a longstanding, complex graphing issue within hours, previously unresolved across multiple work terms, involving multi-layer debugging across React Native, Kotlin, and Arduino.</li>
+                                <li>Drastically improved the backend API vital transmission response times by approximately 99% by transitioning from REST to SignalR.</li>
+                                <li>Led the development of the backend API and Database using C# and ASP.NET alongside stored procedures in Microsoft SQL Server to aggregate and create custom-sized time-series queries.</li>
                                 <li>Effectively transformed technical requirements into features while working in an agile environment.</li>
                                 <li>Collaborated with frontend and mobile teams, to ensure seamless integration with the Web API.</li>
                                 <li>Implemented unit tests and stress tests, ensuring performance and quality standards were met.</li>

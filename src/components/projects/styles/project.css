@@ -1,4 +1,3 @@
-/* Import the base styles */
 @import "../../../data/styles.css";
 
 .project {
@@ -55,12 +54,12 @@
     right: 10px; 
 }
 .project-buttons {
-    position: absolute; /* Set the position to absolute */
-    bottom: 10px; /* Position it at the bottom of the project container */
-    width: 100%; /* Stretch across the entire width of the project container */
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
     display: flex;
-    justify-content: space-between; /* Space out the buttons */
-    padding: 0 20px; /* Add some padding on the sides */
+    justify-content: space-between;
+    padding: 0 20px;
 }
 @media (max-width: 768px) {
     .project {
