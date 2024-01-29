@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet";
 import Lottie from "lottie-react";
 import animationData from '../assets/Animation - 1706312347317.json'
-
+import { motion, useViewportScroll, useTransform } from 'framer-motion';
 import { faMailBulk } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -10,16 +10,13 @@ import {
 	faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
 
-import Logo from "../components/common/logo";
 import Footer from "../components/common/footer";
 import NavBar from "../components/common/navBar";
-import Certification from "../components/homepage/certification";
 import Works from "../components/homepage/works";
 import AllProjects from "../components/projects/allProjects";
 
 import INFO from "../data/user";
 import SEO from "../data/seo";
-import myCertifications from "../data/certifications";
 
 import "./styles/homepage.css";
 import Education from "../components/homepage/education";
@@ -28,7 +25,10 @@ const Homepage = () => {
 	const [stayLogo, setStayLogo] = useState(false);
 	const [logoSize, setLogoSize] = useState(80);
 	const [oldLogoSize, setOldLogoSize] = useState(80);
-
+	const variants = {
+		visible: { opacity: 1, y: 0 },
+		hidden: { opacity: 0, y: 75 }
+	  };
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
@@ -59,16 +59,6 @@ const Homepage = () => {
 
 	const currentSEO = SEO.find((item) => item.page === "home");
 
-	const logoStyle = {
-		display: "flex",
-		position:  "relative",
-		top: stayLogo ? "3vh" : "auto",
-		zIndex: 999,
-		border: stayLogo ? "1px solid white" : "none",
-		borderRadius: stayLogo ? "50%" : "none",
-		boxShadow: stayLogo ? "0px 4px 10px rgba(0, 0, 0, 0.25)" : "none",
-	};
-
 	return (
 		<React.Fragment>
 			<Helmet>
@@ -87,13 +77,21 @@ const Homepage = () => {
 					<div className="homepage-container">
 						<div className="homepage-first-area">
 							<div className="homepage-first-area-left-side">
-								<div className="title homepage-title">
-									{INFO.homepage.title}
-								</div>
+								<motion.div
+									initial="hidden"
+									whileInView="visible"
+									viewport={{ once: true }}
+									transition={{ duration: 0.5, delay: 0.25 }}
+									variants={variants}
+								>
+									<div className="title homepage-title">
+										{INFO.homepage.title}
+									</div>
 
-								<div className="subtitle homepage-subtitle">
-									{INFO.homepage.description}
-								</div>
+									<div className="subtitle homepage-subtitle">
+										{INFO.homepage.description}
+									</div>
+								</motion.div>
 							</div>
 
 							<div className="homepage-first-area-right-side">

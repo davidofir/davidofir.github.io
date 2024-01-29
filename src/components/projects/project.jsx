@@ -5,7 +5,14 @@ import { faLink } from "@fortawesome/free-solid-svg-icons";
 import MediaDisplay from './MediaDisplay'; 
 import "./styles/project.css";
 import { Modal, Button } from 'react-bootstrap';
+import { motion, useViewportScroll, useTransform } from 'framer-motion';
+
 const Project = (props) => {
+    const variants = {
+        visible: { opacity: 1, y: 0 },
+        hidden: { opacity: 0, y: 75 }
+      };
+    
     const [showModal, setShowModal] = useState(false);
     const { logo, title, description, linkText, link, videoUrl, imageUrls, frameworks,languages,features } = props;
     const handleShow = () => setShowModal(true);
@@ -13,6 +20,13 @@ const Project = (props) => {
     return (
       <React.Fragment>
           <div className="project">
+          <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.25 }}
+          variants={variants}
+        >
               <div className="media-display">
                   <MediaDisplay videoUrl={videoUrl} imageUrls={imageUrls} />
               </div>
@@ -36,6 +50,7 @@ const Project = (props) => {
                       </a>
                     </div>
                     </div>
+                    </motion.div>
           </div>
           <Modal show={showModal} onHide={handleClose} size="md" aria-labelledby="contained-modal-title-vcenter" centered>
               <Modal.Header closeButton>

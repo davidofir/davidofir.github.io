@@ -1,11 +1,16 @@
 import React from "react";
 import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
+import { motion, useViewportScroll, useTransform } from 'framer-motion';
 
 import Card from "../common/card";
 
 import "./styles/works.css";
 
 const Works = () => {
+	const variants = {
+		visible: { opacity: 1, y: 0 },
+		hidden: { opacity: 0, y: 75 }
+	  };
 	return (
 	  <div className="works">
 		<Card
@@ -13,6 +18,13 @@ const Works = () => {
 		  title="Work"
 		  body={
 			<div className="works-body">
+				<motion.div
+				    initial="hidden"
+					whileInView="visible"
+					viewport={{ once: true }}
+					transition={{ duration: 0.5, delay: 0.25 }}
+					variants={variants}
+				>
 			  {/* Naryant, Osteoporosis Canada + CMI */}
 			  <div className="work">
 				<img
@@ -58,6 +70,7 @@ const Works = () => {
                                 <li>Implemented unit tests and stress tests, ensuring performance and quality standards were met.</li>
                                 </ul>
                                 </div>
+			</motion.div>
 			</div>
 		  }
 		/>
