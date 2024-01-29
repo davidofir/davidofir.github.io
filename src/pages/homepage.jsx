@@ -25,12 +25,19 @@ const Homepage = () => {
 	const [stayLogo, setStayLogo] = useState(false);
 	const [logoSize, setLogoSize] = useState(80);
 	const [oldLogoSize, setOldLogoSize] = useState(80);
+	const [isAnimationLoaded, setIsAnimationLoaded] = useState(false);
+
 	const variants = {
 		visible: { opacity: 1, y: 0 },
 		hidden: { opacity: 0, y: 75 }
 	  };
 	useEffect(() => {
 		window.scrollTo(0, 0);
+		const timer = setTimeout(() => {
+            setIsAnimationLoaded(true);
+        }, 1500);
+
+        return () => clearTimeout(timer);
 	}, []);
 
 	useEffect(() => {
@@ -97,7 +104,7 @@ const Homepage = () => {
 							<div className="homepage-first-area-right-side">
 								<div className="homepage-image-container">
 									<div className="homepage-image-wrapper">
-										<Lottie animationData={animationData}/>
+										{isAnimationLoaded && <Lottie animationData={animationData}/>}
 									</div>
 								</div>
 							</div>
