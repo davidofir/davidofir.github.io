@@ -5,7 +5,6 @@ import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
 import Logo from "../components/common/logo";
 import Certification from "../components/certifications/certification";
-
 import INFO from "../data/user";
 import SEO from "../data/seo";
 
@@ -18,7 +17,6 @@ const Certifications = () => {
 	}, []);
 
 	const currentSEO = SEO.find((item) => item.page === "certifications");
-
 	return (
 		<React.Fragment>
 			<Helmet>

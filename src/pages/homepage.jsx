@@ -35,7 +35,7 @@ const Homepage = () => {
 		window.scrollTo(0, 0);
 		const timer = setTimeout(() => {
             setIsAnimationLoaded(true);
-        }, 1500);
+        }, 2000);
 
         return () => clearTimeout(timer);
 	}, []);
