@@ -23,7 +23,7 @@ const INFO = {
 			description:
 				"Collaborated with 2 other team members, the project tries to solve a common issue that many music fans face, how to browse reviews from their favorite artists while also connecting with other like-minded fans.",
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
-			linkText: "View Project",
+			linkText: "View Project >",
 			link: "https://github.com/davidofir/SoundBox",
 			imageUrls:[
 				process.env.PUBLIC_URL + '/SoundBox/SoundBox-Chat.png',
@@ -45,7 +45,7 @@ const INFO = {
 			description:
 				"A project that provides users with a platform that allows them to browse local farmers and what kind of produce is sold. The main goal is to allow users to buy fresh produce directly from farmers, while also cutting the middleman.",
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
-			linkText: "View Project",
+			linkText: "View Project >",
 			link: "https://github.com/davidofir/FarmMart",
 			imageUrls:[
 				process.env.PUBLIC_URL + '/FarmMart/FarmMart-LandingPage.png',
@@ -65,7 +65,7 @@ const INFO = {
 			description:
 				"Collaborated with 2 other group members to create an application whose goal is to make styling and color matching more accessible using image recognition and color extraction.",
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/kotlin/kotlin.png",
-			linkText: "View Project",
+			linkText: "View Project >",
 			link: "https://github.com/Akochhar29/Wardroba",
 			videoUrl:'https://www.youtube.com/embed/5y6Tcgi-cMo',
 			frameworks:"Android, Firebase",
@@ -78,7 +78,7 @@ const INFO = {
 		// 	description:
 		// 		"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
 		// 	logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
-		// 	linkText: "View Project",
+		// 	linkText: "View Project >",
 		// 	link: "https://github.com",
 		// },
 
@@ -87,7 +87,7 @@ const INFO = {
 		// 	description:
 		// 		"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
 		// 	logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
-		// 	linkText: "View Project",
+		// 	linkText: "View Project >",
 		// 	link: "https://github.com",
 		// },
 	],

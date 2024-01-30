@@ -39,13 +39,12 @@ const Project = (props) => {
               </div>
               <div className="project-buttons">
                     <div>
-                      <Button variant="primary" onClick={handleShow}>
-                          View Features
+                      <Button style={{borderRadius:'50px'}} variant="primary" onClick={handleShow}>
+                          Features
                       </Button>
                     </div>
                     <div>
                       <a href={link} target="_blank" className="project-link">
-                          <FontAwesomeIcon icon={faLink} className="mr-2" />
                           {linkText}
                       </a>
                     </div>
@@ -66,7 +65,7 @@ const Project = (props) => {
                   </ul>
               </Modal.Body>
               <Modal.Footer>
-                  <Button variant="secondary" onClick={handleClose}>
+                  <Button style={{borderRadius:'50px'}} variant="secondary" onClick={handleClose}>
                       Close
                   </Button>
               </Modal.Footer>

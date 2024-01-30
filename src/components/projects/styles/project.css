@@ -38,8 +38,11 @@
 .media-display {
     flex: 1;
 }
-
-.project-title, .project-description {
+.project-title{
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.project-description {
     margin-bottom: 10px;
 }
 
