@@ -5,7 +5,7 @@ import { faLink } from "@fortawesome/free-solid-svg-icons";
 import MediaDisplay from './MediaDisplay'; 
 import "./styles/project.css";
 import { Modal, Button } from 'react-bootstrap';
-import { motion, useViewportScroll, useTransform } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 const Project = (props) => {
     const variants = {
@@ -14,7 +14,7 @@ const Project = (props) => {
       };
     
     const [showModal, setShowModal] = useState(false);
-    const { logo, title, description, linkText, link, videoUrl, imageUrls, frameworks,languages,features } = props;
+    const { title, description, linkText, link, videoUrl, imageUrls, frameworks,languages,features } = props;
     const handleShow = () => setShowModal(true);
     const handleClose = () => setShowModal(false);
     return (
