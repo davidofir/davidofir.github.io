@@ -40,7 +40,7 @@ const Project = (props) => {
               </motion.div>
               <div className="project-buttons">
                     <div>
-                      <Button style={{borderRadius:'50px'}} variant="primary" onClick={handleShow}>
+                      <Button style={{borderRadius:'50px', marginLeft:'-10px'}} variant="primary" onClick={handleShow}>
                           Features
                       </Button>
                     </div>
