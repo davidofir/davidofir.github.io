@@ -37,6 +37,7 @@ const Project = (props) => {
                   <p className="project-description">{description}</p>
 
               </div>
+              </motion.div>
               <div className="project-buttons">
                     <div>
                       <Button style={{borderRadius:'50px'}} variant="primary" onClick={handleShow}>
@@ -49,7 +50,7 @@ const Project = (props) => {
                       </a>
                     </div>
                     </div>
-                    </motion.div>
+
           </div>
           <Modal show={showModal} onHide={handleClose} size="md" aria-labelledby="contained-modal-title-vcenter" centered>
               <Modal.Header closeButton>
