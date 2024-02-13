@@ -25,25 +25,25 @@ const Works = () => {
 					transition={{ duration: 0.5, delay: 0.25 }}
 					variants={variants}
 				>
-			  {/* Naryant, Osteoporosis Canada + CMI */}
 			  <div className="work">
 				<img
-				  src={process.env.PUBLIC_URL + '/naryant_logo.jpeg'}
-				  alt="Naryant"
+				  src={process.env.PUBLIC_URL + '/Osteoporosis_Canada.jpeg'}
+				  alt="Osteoporosis Canada"
 				  className="work-image"
 				/>
 				<div className="work-content">
-				  <div className="work-title">Naryant, Osteoporosis Canada + CMI</div>
-				  <div className="work-subtitle">Machine Learning Intern</div>
+				  <div className="work-title">Osteoporosis Canada</div>
+				  <div className="work-subtitle">ML Developer Intern</div>
 				</div>
 				<div className="work-duration">May 2023 – August 2023</div>
 			  </div>
 			  <div className="work-responsibilities">
                                 <ul>
                                 <li>Developed an automatic dependency resolution script for Python, saving weeks in the pipeline’s setup.</li>
-                                <li>Built a tool that compares multiple Survival-Analysis models and returns the best models, enhancing the efficiency and ease of selecting the most suitable model.</li>
-								<li>Applied analytical skills to assess the impact of removing certain features on the accuracy of the model.</li>
-                                <li>Reported findings to non-technical domain experts, demonstrating communication skills.</li>
+                                <li>Built a multi-model Survival-Analysis comparison tool that returns the highest-rated models, enhancing the efficiency and ease of selecting the most suitable model.</li>
+								<li>Incorporated multithreading, reducing execution times by over 75%.</li>
+								<li>Used analytical skills to assess the impact of removing certain features on the accuracy of the model.</li>
+                                <li>Reported findings to stakeholders, demonstrating communication skills.</li>
 								</ul>
                                 </div>
 			  
@@ -62,12 +62,12 @@ const Works = () => {
 			  </div>
 			  <div className="work-responsibilities">
                                 <ul>
-                                    <li>Swiftly troubleshooted a longstanding, complex graphing issue within hours, previously unresolved across multiple work terms, involving multi-layer debugging across React Native, Kotlin, and Arduino.</li>
-                                <li>Drastically improved the backend API vital transmission response times by approximately 99% by transitioning from REST to SignalR.</li>
-                                <li>Led the development of the backend API and Database using C# and ASP.NET alongside stored procedures in Microsoft SQL Server to aggregate and create custom-sized time-series queries.</li>
+                                <li>Led the development of the Back End API and database in C# and ASP.NET, optimizing SQL Server processes for scalable data aggregation and query handling.</li>
+                                <li>Applied performance optimizations to the Back End’s time-series bucketing algorithms, resulting in up to 300% performance improvement.</li>
+                                <li>Resolved system integration issues by using numerous debugging methods involving multilayered logs from interconnected React Native, Kotlin, and Arduino applications.</li>
                                 <li>Effectively transformed technical requirements into features while working in an agile environment.</li>
-                                <li>Collaborated with frontend and mobile teams, to ensure seamless integration with the Web API.</li>
-                                <li>Implemented unit tests and stress tests, ensuring performance and quality standards were met.</li>
+                                <li>Ensured seamless end-to-end integration with client apps with the Back-End web API through close collaboration with Front-End and Mobile teams.</li>
+                                <li>Conducted unit testing and stress testing, ensuring scalability and compliance with quality standards.</li>
                                 </ul>
                                 </div>
 			</motion.div>
