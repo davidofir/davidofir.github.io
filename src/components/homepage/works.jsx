@@ -55,7 +55,7 @@ const Works = () => {
 				  className="work-image"
 				/>
 				<div className="work-content">
-				  <div className="work-title">CloudDX + CMI</div>
+				  <div className="work-title">CloudDX</div>
 				  <div className="work-subtitle">Software Developer Intern</div>
 				</div>
 				<div className="work-duration">May 2022 – April 2023</div>
