@@ -14,7 +14,7 @@ const INFO = {
 	homepage: {
 		title: "Ofir David",
 		description:
-			"A software developer with a passion for crafting robust and scalable solutions across mobile, backend, and front-end web applications. My approach blends innovative thinking with a strong commitment to problem-solving, driven by continuous learning and a talent for translating complex requirements into user-centric software to deliver impactful results.",
+			"My journey in software development began in 6th grade with the creation of my first website—a platform that showcased and sold paintings. This early initiative not only fueled my passion for technology but also established a solid foundation for my expertise in developing robust and scalable solutions across mobile, backend, and front-end web applications. Today, my approach is distinguished by a fusion of innovative thinking and a continuous commitment to problem-solving.",
 	},
 
 	projects: [
