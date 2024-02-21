@@ -14,7 +14,7 @@ const NavBar = (props) => {
                     <div className="menu-icon" onClick={() => setIsNavExpanded(!isNavExpanded)}>
                         <FontAwesomeIcon icon={faBars} />
                     </div>
-                    <div className={`nav-background ${isNavExpanded ? "expanded" : ""}`}>
+                    <div className={`nav-background`}>
                         <ul className="nav-list">
                             <li className={active === "home" ? "nav-item active" : "nav-item"}>
                                 <Link to="/">Home</Link>

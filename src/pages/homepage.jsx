@@ -40,30 +40,6 @@ const Homepage = () => {
         return () => clearTimeout(timer);
 	}, []);
 
-	useEffect(() => {
-		const handleScroll = () => {
-			let scroll = Math.round(window.pageYOffset, 2);
-
-			let newLogoSize = 80 - (scroll * 4) / 10;
-
-			if (newLogoSize < oldLogoSize) {
-				if (newLogoSize > 40) {
-					setLogoSize(newLogoSize);
-					setOldLogoSize(newLogoSize);
-					setStayLogo(false);
-				} else {
-					setStayLogo(true);
-				}
-			} else {
-				setLogoSize(newLogoSize);
-				setStayLogo(false);
-			}
-		};
-
-		window.addEventListener("scroll", handleScroll);
-		return () => window.removeEventListener("scroll", handleScroll);
-	}, [logoSize, oldLogoSize]);
-
 	const currentSEO = SEO.find((item) => item.page === "home");
 
 	return (
@@ -104,7 +80,7 @@ const Homepage = () => {
 							<div className="homepage-first-area-right-side">
 								<div className="homepage-image-container">
 									<div className="homepage-image-wrapper">
-										{isAnimationLoaded && <Lottie animationData={animationData}/>}
+										{ <Lottie animationData={animationData}/>}
 									</div>
 								</div>
 							</div>
